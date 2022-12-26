@@ -1,0 +1,66 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+header {
+    background-color: rgb(10, 38, 124);
+}
+/* imagen areas de prctica */
+.imagen_area {
+    width: 470px;
+    height: 360px;
+}
+
+.boton_whtasapp{
+    background-color: rgb(10, 38, 124);
+}
+.imagen_quien{
+    width: 400px;
+    height: 400px;
+}
+.footer{
+    background-color: rgb(10, 38, 124);
+}
+.contenedor{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "logo logo quienessomos areasdepractica"
+    "logo logo sistemadeautoproteccion contacto";
+}
+.logo{
+    grid-area: logo;
+    background-color:rgb(10, 38, 124);
+}
+.quienessomos{
+    grid-area: quienessomos;
+    background-color:rgb(10, 38, 124);
+}
+.sistemadeautoproteccion{
+    grid-area: sistemadeautoproteccion;
+    background-color: #0D52BD;
+}
+.areasdepractica{
+    grid-area: areasdepractica;
+    background-color: #0D52BD;
+}
+.contacto{
+    grid-area: contacto;
+    background-color: rgb(10, 38, 124);
+}
+.contenedor >div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titulo{
+    color: white;
+}
