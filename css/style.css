@@ -21,7 +21,7 @@ a {
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
         "logo logo quienessomos areasdepractica"
-        "logo logo sistemadeautoproteccion contacto";
+        "logo logo sistemadeautoproteccion contacto_index";
 }
 
 .logo {
@@ -44,8 +44,8 @@ a {
     background-color: #0D52BD;
 }
 
-.contacto {
-    grid-area: contacto;
+.contacto_index {
+    grid-area: contacto_index;
     background-color: rgb(10, 38, 124);
 }
 
@@ -63,13 +63,16 @@ a {
 /* index final */
 
 /* footer inicio */
-.linkedin,
+.facebook,
 .instagram,
-.facebook {
-    color: rgb(10, 38, 124);
+.linkedin {
+    color: rgb(0, 0, 0);
     margin: 10px;
+    background-color: rgb(10, 38, 124);
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
 }
-
 .menu {
     width: 90%;
     max-width: 1200px;
@@ -131,15 +134,15 @@ a {
     font-size: xx-large;
 }
 
+.footer {
+    background-color: white;
+}
+
 .footer .titulo_footer,
 .footer .copy {
     color: black;
     display: flex;
     justify-content: center;
-}
-
-.footer {
-    background-color: white;
 }
 
 .redes_sociales {
@@ -148,17 +151,30 @@ a {
 }
 
 .redes_sociales i {
-    font-size: 40px;
+    font-size: 50px;
     padding: 0 20px 0 20px;
+    color: white;
 }
 
 /* main de areas */
-.container {
+.container,
+.container_quienes {
     width: 85%;
     margin: 50px auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 25px;
+}
+
+.cards:hover{
+    box-shadow: 0 0 14px white;
+    transition: all 1s;
+    transform: translateX(-10px);
+}
+
+.cards_quienes:hover {
+    box-shadow: 0 0 14px white;
+    transition: all 1s;
 }
 
 .cards {
@@ -187,6 +203,27 @@ a {
 
 .cards .img_tres {
     background-image: url(../assets/images/obra\ 3.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cards .img_uno_quienes {
+    background-image: url(../assets/images/marcos.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cards .img_dos_quienes {
+    background-image: url(../assets/images/melina.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cards .img_tres_quienes {
+    background-image: url(../assets/images/ailen2.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -233,7 +270,7 @@ a {
     padding-right: 25px;
 }
 
-.contacto {
+.contacto_contacto {
     background-color: #0D52BD;
     color: white;
     font-size: 18px;
@@ -243,16 +280,13 @@ a {
     display: grid;
     gap: 25px;
     grid:
-    "titulo1 formulario1" auto
-    "detalles1 formulario1" 1fr
-    "social1 formulario1" auto /
-    1fr          1fr;
-    align-items:flex-start;
+        "titulo1 formulario1" auto "detalles1 formulario1" 1fr "social1 formulario1" auto / 1fr 1fr;
+    align-items: flex-start;
 }
 
-.contacto p,
-.contacto h2,
-.contacto ul {
+.contacto_contacto p,
+.contacto_contacto h2,
+.contacto_contacto ul {
     margin: 0;
     padding: 0;
 }
@@ -265,7 +299,7 @@ a {
 }
 
 .contacto_detalles,
-.contacto_formulario_grupo{
+.contacto_formulario_grupo {
     display: grid;
     gap: 20px;
 }
@@ -318,27 +352,94 @@ a {
 .instagram_contacto,
 .linkedin_contacto {
     color: white;
+    background-color: rgb(10, 38, 124);
+    padding: 5px;
+    border-radius: 2px;
 }
 
 .red_item:hover {
     box-shadow: 0 0 14px white;
 }
 
-.contacto_titulo{
+.contacto_titulo {
     grid-area: titulo1;
 }
-.contacto_formulario{
+
+.contacto_formulario {
     grid-area: formulario1;
 }
-.contacto_detalles{
+
+.contacto_detalles {
     grid-area: detalles1;
 }
-.social{
+
+.social {
     grid-area: social1;
 }
+
+/* pagina sistema de autoproteccion */
+.container_proteccion{
+    width: 85%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+}
+
+.cards_proteccion:hover {
+    box-shadow: 0 0 14px white;
+    transition: all 1s;
+    
+}
+
+.cards_proteccion {
+    background-color: #fff;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.imagen_section_proteccion {
+    height: 225px;
+    background-color: red;
+}
+
+.cards_proteccion .img_uno_proteccion {
+    background-image: url(../assets/images/medicion2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cards_proteccion .img_dos_proteccion {
+    background-image: url(../assets/images/fire-2086370_1920-678x381.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cards_proteccion .img_tres_proteccion {
+    background-image: url(../assets/images/iluminacion2.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contenido_proteccion {
+    padding: 15px;
+    text-align: center;
+}
+
+.contenido_proteccion h2 {
+    letter-spacing: 1.5px;
+}
+
+.contenido_proteccion p {
+    margin: 15px 0px;
+    font-size: 15px;
+}
+
 /* media queries inicio */
 
-@media (max-width: 950px) {
+@media (max-width: 768px) {
     .contenedor {
         display: grid;
         width: 100%;
@@ -351,14 +452,14 @@ a {
             "quienessomos"
             "sistemadeautoproteccion"
             "areasdepractica"
-            "contacto";
+            "contacto_index";
     }
 
     .areasdepractica {
         background-color: rgb(10, 38, 124);
     }
 
-    .contacto {
+    .contacto_index {
         background-color: #0D52BD;
     }
 
@@ -388,31 +489,49 @@ a {
     }
 
     .vertical_padding {
-        padding-left: 70px;
-        padding-right: 70px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 
-    .contacto {
+    .contacto_contacto {
         font-size: 20px;
         padding: 70px;
         margin: 15px auto;
         grid:
-        "titulo1"
-        "detalles1"
-        "formulario1"
-        "social1"/
-        1fr;
+            "titulo1"
+            "detalles1"
+            "formulario1"
+            "social1" / 1fr;
+        text-align: center;
     }
 
     .contacto_titulo {
         font-size: 35px;
-        text-align: left;
+        text-align: center;
     }
+
     .facebook_contacto,
     .instagram_contacto,
     .linkedin_contacto {
         color: white;
         align-items: center;
+    }
+    /* pagina quienes somos */
+    .container_quienes{
+        width: 85%;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 25px;
+    }
+
+    /* pagina de sistema de autoproteccion */
+    .container_proteccion{
+        width: 85%;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns:1fr;
+        grid-gap: 25px;
     }
 }
 
