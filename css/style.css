@@ -1,85 +1,474 @@
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 a {
     text-decoration: none;
 }
-header {
+
+.body {
     background-color: rgb(10, 38, 124);
-}
-/* imagen areas de prctica */
-.imagen_area {
-    width: 470px;
-    height: 360px;
 }
 
-.boton_whtasapp{
-    background-color: rgb(10, 38, 124);
-}
-.imagen_quien{
-    width: 400px;
-    height: 400px;
-}
-.footer{
-    background-color: rgb(10, 38, 124);
-}
-.contenedor{
+/* index */
+.contenedor {
     display: grid;
     width: 100%;
     height: 100vh;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
-    "logo logo quienessomos areasdepractica"
-    "logo logo sistemadeautoproteccion contacto";
+        "logo logo quienessomos areasdepractica"
+        "logo logo sistemadeautoproteccion contacto";
 }
-.logo{
+
+.logo {
     grid-area: logo;
-    background-color:rgb(10, 38, 124);
+    background-color: rgb(10, 38, 124);
 }
-.quienessomos{
+
+.quienessomos {
     grid-area: quienessomos;
-    background-color:rgb(10, 38, 124);
+    background-color: rgb(10, 38, 124);
 }
-.sistemadeautoproteccion{
+
+.sistemadeautoproteccion {
     grid-area: sistemadeautoproteccion;
     background-color: #0D52BD;
 }
-.areasdepractica{
+
+.areasdepractica {
     grid-area: areasdepractica;
     background-color: #0D52BD;
 }
-.contacto{
+
+.contacto {
     grid-area: contacto;
     background-color: rgb(10, 38, 124);
 }
-.contenedor >div {
+
+.contenedor>div {
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all 1s;
 }
-.titulo{
+
+.titulo {
     color: white;
 }
+
+/* index final */
+
+/* footer inicio */
+.linkedin,
+.instagram,
+.facebook {
+    color: rgb(10, 38, 124);
+    margin: 10px;
+}
+
+.menu {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+/* footer final */
+/* menu */
+.menu_navegacion {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.logo_ag {
+    display: block;
+    height: 60px;
+    width: 60px;
+}
+
+.enlaces li {
+    list-style: none;
+    display: inline-block;
+}
+
+.enlaces a {
+    text-decoration: none;
+    color: white;
+    padding-left: 10px;
+}
+
+/* fin del menu */
+/* hero */
+.hero {
+    height: 200px;
+    width: 100%;
+    background-image: url(../assets/images/cascos.jpg.webp);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contenedor_textos {
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo_hero {
+    background-color: rgb(10, 38, 124);
+    color: white;
+    font-size: xx-large;
+}
+
+.footer .titulo_footer,
+.footer .copy {
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    background-color: white;
+}
+
+.redes_sociales {
+    display: flex;
+    justify-content: center;
+}
+
+.redes_sociales i {
+    font-size: 40px;
+    padding: 0 20px 0 20px;
+}
+
+/* main de areas */
+.container {
+    width: 85%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+}
+
+.cards {
+    background-color: #fff;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.imagen_section {
+    height: 225px;
+    background-color: red;
+}
+
+.cards .img_uno {
+    background-image: url(../assets/images/comercio\ 3.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cards .img_dos {
+    background-image: url(../assets/images/puesta-a-tierra.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cards .img_tres {
+    background-image: url(../assets/images/obra\ 3.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contenido {
+    padding: 15px;
+    text-align: center;
+}
+
+.contenido h2 {
+    letter-spacing: 1.5px;
+}
+
+.contenido p {
+    margin: 15px 0px;
+    font-size: 15px;
+}
+
+.contenido a {
+    text-decoration: none;
+    font-size: 17px;
+    color: #fff;
+    letter-spacing: 1.5px;
+    display: inline-block;
+    background-color: rgb(10, 38, 124);
+    padding: 8px 15px;
+}
+
+.contenido a:hover {
+    background-color: #0D52BD;
+    color: white;
+    transition: 1s ease;
+}
+
+/* pagina contacto */
+.horizontal_padding {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.vertical_padding {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.contacto {
+    background-color: #0D52BD;
+    color: white;
+    font-size: 18px;
+    border-radius: 14px;
+    padding: 25px;
+    margin-top: 30px;
+    display: grid;
+    gap: 25px;
+    grid:
+    "titulo1 formulario1" auto
+    "detalles1 formulario1" 1fr
+    "social1 formulario1" auto /
+    1fr          1fr;
+    align-items:flex-start;
+}
+
+.contacto p,
+.contacto h2,
+.contacto ul {
+    margin: 0;
+    padding: 0;
+}
+
+.contacto_titulo {
+    font-size: 30px;
+    font-weight: 500px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contacto_detalles,
+.contacto_formulario_grupo{
+    display: grid;
+    gap: 20px;
+}
+
+.contacto_detalles_grupo,
+.contacto_formulario {
+    display: grid;
+    gap: 3px;
+}
+
+.contacto_label {
+    text-transform: uppercase;
+    font-weight: 500px;
+}
+
+.contacto_formulario input,
+.contacto_formulario textarea {
+    border-radius: 7px;
+    border: none;
+    height: 30px;
+    padding: 5px 10px;
+}
+
+.contacto_formulario textarea {
+    height: auto;
+    resize: vertical;
+}
+
+.boton_submit {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    background-color: rgb(10, 38, 124);
+    color: white;
+    border-radius: 1px solid rgb(10, 38, 124);
+}
+
+.boton_submit:hover {
+    box-shadow: 0 0 14px white;
+}
+
+.lista_redes_sociales {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.facebook_contacto,
+.instagram_contacto,
+.linkedin_contacto {
+    color: white;
+}
+
+.red_item:hover {
+    box-shadow: 0 0 14px white;
+}
+
+.contacto_titulo{
+    grid-area: titulo1;
+}
+.contacto_formulario{
+    grid-area: formulario1;
+}
+.contacto_detalles{
+    grid-area: detalles1;
+}
+.social{
+    grid-area: social1;
+}
+/* media queries inicio */
+
+@media (max-width: 950px) {
+    .contenedor {
+        display: grid;
+        width: 100%;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "logo"
+            "logo"
+            "quienessomos"
+            "sistemadeautoproteccion"
+            "areasdepractica"
+            "contacto";
+    }
+
+    .areasdepractica {
+        background-color: rgb(10, 38, 124);
+    }
+
+    .contacto {
+        background-color: #0D52BD;
+    }
+
+    .logotipo {
+        height: 200px;
+        width: 200px;
+    }
+
+    .container {
+        width: 85%;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 25px;
+    }
+
+    .menu_navegacion {
+        flex-direction: column;
+        height: 120px;
+        justify-content: space-evenly
+    }
+
+    /* pagina contacto */
+    .horizontal_padding {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    .vertical_padding {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    .contacto {
+        font-size: 20px;
+        padding: 70px;
+        margin: 15px auto;
+        grid:
+        "titulo1"
+        "detalles1"
+        "formulario1"
+        "social1"/
+        1fr;
+    }
+
+    .contacto_titulo {
+        font-size: 35px;
+        text-align: left;
+    }
+    .facebook_contacto,
+    .instagram_contacto,
+    .linkedin_contacto {
+        color: white;
+        align-items: center;
+    }
+}
+
+/* media queries final*/
 /* animaciones cards*/
 .card:hover {
     transform: scale(1.1);
 }
 
-.card{
+.card {
     transition: all 1s;
 }
 
-.contenedor >div:hover {
+.contenedor>div:hover {
     transform: scale(1.1);
 }
 
 /* animista */
 
-.puff-in-center{-webkit-animation:puff-in-center .7s cubic-bezier(.47,0.000,.745,.715) both;animation:puff-in-center .7s cubic-bezier(.47,0.000,.745,.715) both}
+.puff-in-center {
+    -webkit-animation: puff-in-center .7s cubic-bezier(.47, 0.000, .745, .715) both;
+    animation: puff-in-center .7s cubic-bezier(.47, 0.000, .745, .715) both
+}
 
- @-webkit-keyframes puff-in-center{0%{-webkit-transform:scale(2);transform:scale(2);-webkit-filter:blur(4px);filter:blur(4px);opacity:0}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-filter:blur(0);filter:blur(0);opacity:1}}@keyframes puff-in-center{0%{-webkit-transform:scale(2);transform:scale(2);-webkit-filter:blur(4px);filter:blur(4px);opacity:0}100%{-webkit-transform:scale(1);transform:scale(1);-webkit-filter:blur(0);filter:blur(0);opacity:1}}
+@-webkit-keyframes puff-in-center {
+    0% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        -webkit-filter: blur(4px);
+        filter: blur(4px);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1
+    }
+}
+
+@keyframes puff-in-center {
+    0% {
+        -webkit-transform: scale(2);
+        transform: scale(2);
+        -webkit-filter: blur(4px);
+        filter: blur(4px);
+        opacity: 0
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-filter: blur(0);
+        filter: blur(0);
+        opacity: 1
+    }
+}
