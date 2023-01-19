@@ -12,7 +12,7 @@ a {
     background-color: rgb(10, 38, 124);
 }
 
-/* index */
+/* pagina index */
 .contenedor {
     display: grid;
     width: 100%;
@@ -80,7 +80,6 @@ a {
     overflow: hidden;
     padding: 60px 0;
 }
-
 /* footer final */
 /* menu */
 .menu_navegacion {
@@ -150,15 +149,14 @@ a {
     justify-content: center;
 }
 
-.redes_sociales i {
-    font-size: 50px;
+.redes_sociales a {
+    font-size: 20px;
     padding: 0 20px 0 20px;
     color: white;
 }
 
 /* main de areas */
-.container,
-.container_quienes {
+.container{
     width: 85%;
     margin: 50px auto;
     display: grid;
@@ -170,11 +168,6 @@ a {
     box-shadow: 0 0 14px white;
     transition: all 1s;
     transform: translateX(-10px);
-}
-
-.cards_quienes:hover {
-    box-shadow: 0 0 14px white;
-    transition: all 1s;
 }
 
 .cards {
@@ -208,27 +201,6 @@ a {
     background-position: center;
 }
 
-.cards .img_uno_quienes {
-    background-image: url(../assets/images/marcos.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.cards .img_dos_quienes {
-    background-image: url(../assets/images/melina.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.cards .img_tres_quienes {
-    background-image: url(../assets/images/ailen2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 .contenido {
     padding: 15px;
     text-align: center;
@@ -257,6 +229,64 @@ a {
     background-color: #0D52BD;
     color: white;
     transition: 1s ease;
+}
+/* pagina quienes somos */
+.container_quienes {
+    width: 85%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+}
+
+.cards_quienes:hover {
+    box-shadow: 0 0 14px white;
+    transition: all 1s;
+}
+
+.cards_quienes {
+    background-color: #fff;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.imagen_section_quienes {
+    height: 225px;
+    background-color: red;
+}
+
+.cards_quienes .img_uno_quienes {
+    background-image: url(../assets/images/marcos.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cards_quienes .img_dos_quienes {
+    background-image: url(../assets/images/melina.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cards_quienes .img_tres_quienes {
+    background-image: url(../assets/images/ailen2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contenido_quienes {
+    padding: 15px;
+    text-align: center;
+}
+
+.contenido_quienes h2 {
+    letter-spacing: 1.5px;
+}
+
+.contenido_quienes h3 {
+    margin: 15px 0px;
+    font-size: 15px;
 }
 
 /* pagina contacto */
