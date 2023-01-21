@@ -2,8 +2,8 @@
     padding-left: 10px;
     padding-right: 10px;
     margin-left: 10px;
-    margin-right: 10px;  
-    background-color:$colorsecundaria;
+    margin-right: 10px;
+    background-color: $colorsecundaria;
     color: white;
     font-size: 18px;
     border-radius: 14px;
@@ -12,16 +12,16 @@
     display: grid;
     gap: 25px;
     grid:
-        "titulo1 formulario1" auto 
-        "detalles1 formulario1" 1fr 
-        "social1 formulario1" auto /
-         1fr 1fr;
+        "titulo1 formulario1" auto "detalles1 formulario1" 1fr "social1 formulario1" auto / 1fr 1fr;
     align-items: flex-start;
+
     p,
     h2,
     ul {
         margin: 0;
         padding: 0;
+
+
     }
 
     .contacto_titulo {
@@ -35,7 +35,8 @@
     .contacto_detalles {
         display: grid;
         gap: 20px;
-        grid-area: detalles1; 
+        grid-area: detalles1;
+
         .contacto_detalles_grupo {
             display: grid;
             gap: 3px;
@@ -50,7 +51,7 @@
     .contacto_formulario {
         display: grid;
         gap: 3px;
-        grid-area: formulario1; 
+        grid-area: formulario1;
 
         .contacto_formulario_grupo {
             display: grid;
@@ -64,9 +65,10 @@
                 height: 30px;
                 padding: 5px 10px;
             }
-            textarea{
+
+            textarea {
                 height: auto;
-                resize: vertical;               
+                resize: vertical;
             }
         }
 
@@ -78,7 +80,7 @@
             color: white;
             border-radius: 1px solid $colorprincipal;
 
-            &:hover{
+            &:hover {
                 box-shadow: 0 0 14px white
             }
         }

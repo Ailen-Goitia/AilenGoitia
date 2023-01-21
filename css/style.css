@@ -310,7 +310,7 @@ header .hero {
   margin-top: 50px;
   display: grid;
   gap: 25px;
-  grid: "titulo1 formulario1" auto  "detalles1 formulario1" 1fr  "social1 formulario1" auto / 1fr 1fr;
+  grid: "titulo1 formulario1" auto "detalles1 formulario1" 1fr "social1 formulario1" auto / 1fr 1fr;
   align-items: flex-start; }
   .contacto_contacto p,
   .contacto_contacto h2,
