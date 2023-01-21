@@ -295,7 +295,9 @@ header .hero {
     header .hero .contenedor_textos .titulo_hero {
       background-color: #0a267c;
       color: white;
-      font-size: xx-large; }
+      font-size: xx-large;
+      align-items: center;
+      justify-content: center; }
 
 .contacto_contacto {
   padding-left: 10px;
