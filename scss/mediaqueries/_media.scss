@@ -1,5 +1,5 @@
 @media (max-width: 768px) {
-    .contenedor{
+    .contenedor {
         display: grid;
         width: 100%;
         height: 100vh;
@@ -30,19 +30,32 @@
         justify-content: space-evenly;
     }
 
+    .titulo_hero {
+        background-color: $colorprincipal;
+        color: white;
+        font-size: large;
+        align-items: center;
+        justify-content: center;
+    }
+
     /* pagina contacto */
     .contacto_contacto {
         font-size: 20px;
         padding: 20px;
         margin: 10px;
         grid: "titulo1" "detalles1" "formulario1" "social1" / 1fr;
-        text-align:left;
-        
+        text-align: left;
+
     }
 
     .contacto_titulo {
-        font-size: 35px;
+        font-size: 20px;
         text-align: center;
+
+        h2 {
+            font-size: 30px;
+            font-weight: 300px;
+        }
     }
 
     .facebook_contacto,
